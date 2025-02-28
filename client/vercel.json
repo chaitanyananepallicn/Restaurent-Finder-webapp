@@ -1,0 +1,47 @@
+{
+  "rewrites": [
+    {
+      "source": "/restaurants",
+      "destination": "https://webapp-satyatej10-main.onrender.com/restaurants"
+    },
+    {
+      "source": "/restaurants/:id",
+      "destination": "https://webapp-satyatej10-main.onrender.com/restaurants/:id"
+    },
+    {
+      "source": "/restaurants/location",
+      "destination": "https://webapp-satyatej10-main.onrender.com/restaurants/location"
+    },
+    {
+      "source": "/restaurants/image-search",
+      "destination": "https://webapp-satyatej10-main.onrender.com/restaurants/image-search"
+    },
+    {
+      "source": "/restaurants/searchbyname",
+      "destination": "https://webapp-satyatej10-main.onrender.com/restaurants/searchnyname"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-Requested-With, Content-Type, Accept"
+        }
+      ]
+    }
+  ]
+}
